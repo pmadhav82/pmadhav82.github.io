@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Weather app</title>
+    <link rel="stylesheet" href="style/weather.css" />
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPwTROYU9oPRxCzycw2agqvrRBc0bAsDQ&libraries=places&callback=initMap" defer>
+</script>
+    <script src="script/weather.js" defer></script>
+  </head>
+<body>
+  <div class="back">
+    <a href="index.html#mywork">⬅️</a>
+  </div>
+
+  <section class="top-banner">
+    <h1 class="heading">Simple Weather App</h1>
+    <div class="display">
+      <button id="current">Weather of your city?</button>
+      <div class="info">
+      
+      </div>
+    </div>
+    <div class="container">
+      <form>
+        <input type="text"  id="searchElement" placeholder="Search for a city" autofocus>
+        <button type="submit">Get Weather Info</button>
+        <span class="msg"></span>
+      </form>
+    </div>
+  </section>
+  <section class="ajax-section">
+    <div class="container">
+      <ul class="cities"></ul>
+    </div>
+  </section>
+
+</body>   
+</html>
