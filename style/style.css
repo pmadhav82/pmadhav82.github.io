@@ -2,6 +2,7 @@
 box-sizing: border-box;
 margin: 0;
 padding: 0;
+line-height: 1.5em;
 }
 
 html{
@@ -28,7 +29,7 @@ position: fixed;
     margin: 0 auto;
 }
 #logo{
-margin-top:10px;
+
     color: wheat;
     justify-self: start;
     margin-left: 20px;
@@ -113,7 +114,7 @@ gap: 10px;
     align-self: center;
     width: 450px;
     margin-left: 30px;
-    line-height: 1.4em;
+   
 }
 .icons{
     padding: 5px;
@@ -127,10 +128,12 @@ gap: 10px;
 #service .content{
     height:100vh;
     width: 100%;
-    background:white;
+    
 } 
-#service .content #mywork{
+#service .content #work{
     color: blueviolet;
+    padding-top: 60px;
+    text-align: center;
 }
 #service .content .main{
    display: flex;
@@ -143,11 +146,7 @@ gap: 10px;
   flex-wrap: wrap;
   padding: 15px;
 }
-#mywork{
-    padding-top: 60px;
-    text-align: center;
-    
-}
+
 #description{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 300;
@@ -159,11 +158,12 @@ gap: 10px;
     flex-direction: column;
     margin-top: 10px;
     height:auto;
-    width: 20rem;
+    width: 13rem;
     background-color: lawngreen;
     transition: all 0.9s ease-in-out;
     cursor: pointer;
     text-align: center;
+    padding: 10px;
     border-radius: 10px;
 
 }
