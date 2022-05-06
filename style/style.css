@@ -196,6 +196,7 @@ font-weight: 400;
     color: #fff;
     padding: 5px 10px 0 ;
     font-size: 1.3rem;
+    border-radius: 10px;
    
 } 
 #service .content .item a{
