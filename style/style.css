@@ -235,8 +235,91 @@ font-weight: 400;
   .fa:hover {
     opacity: 0.7;
 }
+#blog{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 90vh;
+    height: auto;
+}
+#blog .contain{
+    
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  
+}
+.postCard{
+    display: flex;
+    height: auto;
+    align-items:center;
+   justify-content:space-around;
+   gap: 20px;
+   flex-wrap: wrap;
+   
+}
+.loader{
+    margin-top: 2rem;
+    border: 16px solid #f3f3f3;
+border-top: 16px solid #3498db;
+border-radius: 50%;
+width: 120px;
+height: 120px;
+animation: spin 2s linear infinite;
 
+}
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
  
+
+
+
+
+
+
+.post_card{
+
+    margin: 10px;
+    padding: 10px;
+    border-radius:10px;
+    background-color:darkgreen ;
+    color: white;
+    width: 12rem;
+    max-width: 14rem;
+   
+   }
+   .post_card h4{
+     color: yellow;
+   }
+  
+  
+   .post_date{
+     opacity: 0.6;
+     margin: 10px;
+   }
+   .btn{
+    color: white;
+   
+    text-decoration: none;
+    background-color:brown;
+    padding: 7px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin: 7px;
+  }
+
+
+
+
+
+
+
+
+
+
 
 
 @media(max-width:580px){
