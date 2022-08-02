@@ -253,7 +253,7 @@ font-weight: 400;
     display: flex;
     height: auto;
     align-items:center;
-   justify-content:space-around;
+   justify-content:center;
    gap: 20px;
    flex-wrap: wrap;
    
@@ -402,6 +402,9 @@ animation: spin 2s linear infinite;
             } 
             #service .content .main{
                 flex-wrap: wrap;
+            }
+            .post_card{
+                width: 90%;
             }
     
     }
