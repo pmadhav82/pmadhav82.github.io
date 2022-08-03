@@ -53,7 +53,7 @@ if(res.status>299){
  </h4>
  </div>
 
- <form method="post"  target = "_none" action="https://pandey-blog.herokuapp.com/post/${d._id}">
+ <form method="get"  target = "_none" action="https://pandey-blog.herokuapp.com/post/${d._id}">
 <button class="btn" type="submit">Read More</button>
 </form>
 </div>
