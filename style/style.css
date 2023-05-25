@@ -3,13 +3,17 @@ box-sizing: border-box;
 margin: 0;
 padding: 0;
 line-height: 1.5em;
+font-size: 1.09rem;
 }
 
 html{
     scroll-behavior: smooth;
 
 }
-
+a{
+    text-decoration: none;
+    
+}
 .navbar-container{
     
 position: fixed;
@@ -96,17 +100,15 @@ gap: 10px;
 
 }
 .imageContainer{
-    margin: 30px;
-    
-    max-width: 40%;
-    width: 300px;
-    min-width: 100px;
+    margin-top: 30px;
+    max-width: 60%;
+    width: 16rem;
     height: auto;
 }
 .imageContainer img{
     width: 100%;
     height: 100%;
-
+border-radius: 2rem;
 }
 .intro{
     padding: 10px;
@@ -242,24 +244,18 @@ font-weight: 400;
     min-height: 90vh;
     height: auto;
 }
-#blog .contain{
+
+.postCard, .card-wrapper{
+    display: grid;
+    padding: 0.5rem 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    align-items: flex-start;
     
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  
-}
-.postCard{
-    display: flex;
-    height: auto;
-    align-items:center;
-   justify-content:center;
-   gap: 20px;
-   flex-wrap: wrap;
    
 }
 .loader{
-    margin-top: 2rem;
+    margin: 2rem auto;
     border: 16px solid #f3f3f3;
 border-top: 16px solid #3498db;
 border-radius: 50%;
@@ -272,46 +268,90 @@ animation: spin 2s linear infinite;
     0% {transform: rotate(0deg);}
     100% {transform: rotate(360deg);}
 }
- 
 
-
-
-
-
-
-.post_card{
-
-    margin: 10px;
-    padding: 10px;
-    border-radius:10px;
-    background-color:darkgreen ;
-    color: white;
-    width: 12rem;
-    max-width: 14rem;
-   
-   }
-   .post_card h4{
-     color: yellow;
-   }
+.card{
+    margin-top: 1rem;
+    --padding: 1rem;
+    border: 1px solid #777;
+  background: #ffff;
+  border-radius: 1rem;
+  overflow: hidden;
   
-  
-   .post_date{
-     opacity: 0.6;
-     margin: 10px;
-   }
-   .btn{
-    color: white;
-   
-    text-decoration: none;
-    background-color:brown;
-    padding: 7px;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    margin: 7px;
   }
+  
+  .card.card-shadow{
+    border: none;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .2);
+  }
+  
+  
+  .card-header{
+    font-size: 1.5rem;
+    padding: var(--padding);
+    font-weight: 500;
+    margin-bottom: .5rem;
+  padding-bottom: 0;
+  }
+  .card-image{
+    overflow: hidden;
+    padding: 0;
+  }
+  .card-image >img{
+    display: block;
+    width: 100%;
+    padding: 0;
+    aspect-ratio: 16 /9;
+    object-fit: cover;
+    max-height: 200px;
+    object-position: center;
+    margin-bottom: 0.5rem;
+    transition: 200ms transform ease-in-out;
+  }
+  
+  .card:hover > .card-image > img{
+    transform: scale(1.025);
+  }
+  
+  
+  .card-body{
+  font-size: 1em;
+  padding: 0 .3rem;
+  
+  }
+  .card-footer{
+  
+    margin-top: 1rem;
+    padding: var(--padding);
+    padding-top: 0;
 
-
+  }
+  
+  .btn{
+  
+    border: none;
+    padding: 0.5em .5em;
+    --background: hsl(200,50%,50%);
+    background: var(--background);
+    color: #fff;
+    border-radius: .25em;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .btn.btn-outline{
+    background: none;
+    color: var(--background);
+  }
+  
+  .btn:hover, .btn:focus{
+    background: hsl(200, 50%, 60%);
+  }
+  .btn.btn-outline:hover, .btn.btn-outline:focus{
+    background: hsl(200, 50%, 90%);
+  }
+  .btn + .btn{
+    margin-left: .25rem;
+  }
+  
 
 
 

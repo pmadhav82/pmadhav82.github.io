@@ -14,48 +14,45 @@ menuLink.classList="nav-menu";
 })
 
 
-const URL_STRING = "https://pandey-blog.herokuapp.com/api/madhavblogs"
+const URL_STRING = "http://www.pblog.online/api/pmadhav279@gmail.com"
 const getData = async ()=>{
   let postCard = document.querySelector(".postCard");
   let html = "";
+  let loader = document.querySelector(".loader");
 
 
   try{
 let res =  await fetch(URL_STRING);
 if(res){
-  let loader = document.querySelector(".loader");
   loader.style.display = "none";
 }
 if(res.status>299){
-  postCard.innerHTML = `<b>Something went wrong, couldn't fetch data </b>`;
+  postCard.innerHTML = `<b>Something went wrong, couldn't fetch the data </b>`;
   return
 }else{
   let data = await res.json();
   data.forEach((d)=>{
     html += `
-    <div class="post_card">
-<p>
+    <div class="card card-shadow">
 
+<div class = "card-header">
    <b> ${d.creator} </b>
-   </p>
-<div class="post_date">
-   
-   <p>
+   <br>
+    ${d.createdAt}
+  </div>
 
-   ${d.createdAt}
-   </p>
-</div>
-<div class="post_title">
+<div class="card-body">
 
- <h4>
 
    ${d.title}
- </h4>
+ 
  </div>
-
- <form method="get"  target = "_none" action="https://pandey-blog.herokuapp.com/post/${d._id}">
+<div class = "card-footer">
+ <form method="get"  target = "_none" action="http://www.pblog.online/${d._id}">
 <button class="btn" type="submit">Read More</button>
 </form>
+</div>
+
 </div>
     `;
     
@@ -66,7 +63,10 @@ if(res.status>299){
 postCard.innerHTML = html;
 
 }catch(err){
-  console.log(err)
+  loader.style.display = "none";
+  postCard.innerHTML = `<b>Something went wrong, couldn't fetch data </b>`;
+
+  return
 }
 
 }

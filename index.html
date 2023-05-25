@@ -8,6 +8,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="google-site-verification" content="NOJX0ZJKrcyIlEXJ2H_qVd1qvtXdXnf9jag--ndm_fY" />
         <title>Madhav</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="style/style.css">
         
@@ -31,7 +34,7 @@
                     <li><a href="#home" class="nav-links" >Home</a></li>
                     <li><a href="#service" class="nav-links">Portfolio</a></li>
                     <li><a href="#contact" class="nav-links">Contact</a></li>
-                    <li><a href="#blog" class="nav-links">Blog</a></li>
+                    <li><a href="#blog" class="nav-links">Blogs</a></li>
                     
                     
                 </ul>
@@ -46,7 +49,7 @@
 
                     <div class="imageContainer">
 
-                         <img src="./images/mypic.jpg"/> 
+                         <img src="./images/madhav-photo"/> 
                     </div>
                     <div class="intro">
                 <p>
@@ -54,9 +57,9 @@
                     Hi, I'm <b> Madhav</b>.
                 </p>   
                 <p>
-                    Bachelor of Information Technology graduate seeking
-                    an entry-level position to begin my career in a high-level professional environment in the Information Technology field.                </p>
-                    <a href="Madhav Resume.docx"  class="download-btn" download="Madhav CV"> 
+                    A motivated and enthusiastic MERN stack developer with a passion for building web applications. Proficient in React, Node.js, Express and MongoDB. Familiar with AWS services sush as EC2, S3 and Lambda
+                   </p>
+ <a href="Madhav-resume.pdf"  class="download-btn" download="Madhav-resume"> 
                      
                         Resume <i class="fa fa-download" aria-hidden="true"></i></a>
               
@@ -72,85 +75,65 @@
     <div class="content">
         <h1 class="heading">Portfolio</h1>
         <hr/>
-        <div class="main">
-
-
-            <div class="item">
-                <h2>P_Blog  </h2>
+        <div class="card-wrapper">
             
-                <img src="./images/p_blog.PNG" alt="p_blog"/>
-                <div id="description">
-                 <b>
-                    A blogging site
-                    <br>
-                     Wher User can:
 
-                 </b> 
-                   <ul>
-                    <ol> Read posted blogs</ol>
-                    <ol>Sign Up to post a blog</ol>
-                    <ol> Post a blog using markdown</ol>
 
-                   </ul>
-                   
+            <div class="card card-shadow">
+                
+                                <div class="card-header">
+                P_Blog
+                                </div>
+                <div class="card-image">
+                    <img src="https://images2.imgbox.com/4c/bb/fiI6x8ao_o.png" alt="">
+                    
                 </div>
-                <a href="https://pandey-blog.herokuapp.com/" target="_blank">Live Demo </a>
-                <a href="https://github.com/pmadhav82/P_blog" target="_blank" >Github  <i class="fa fa-github"></i></a> 
             
+                <div class="card-body">
+             P_Blog is a Node.js and Express.js powered website, utilizing MongoDB and Handelbars. It offers a user-friendly interface for account creation and blog writing using Markdown. Users can efficiently manage thier posts. P_Blog ensures fast performance, consistent layouts, and secure data storage, providing a reliable platform for individuals to express their thoughts through written content. 
+                </div>
+                <div class="card-footer">
+                   
+                    <button class="btn">
+                        <a href="https://pandey-blog.herokuapp.com/" target="_blank">Live Demo </a>
+
+                    </button>
+
+    <button class="btn btn-outline">
+        <a   href="https://github.com/pmadhav82/P_blog" target="_blank" >Github  <i class="fa fa-github"></i></a> 
+        </button>
+
+                
+    </div>
                 </div>
     
 
+             <div class="card card-shadow">
+                 <div class="card-header">Weather-app</div>
 
-            <div class="item">
-                <h2>Login System</h2>
+                <div class="card-image">
+                    <img src="./images/weather.PNG" alt="weather"/>
+                </div>
+                <div class="card-body">
+                    The Weather-app provides real-time weather information for locations worldwide. Powered by Google Place API, users can easily search for any location and retrive its weather details. Additionally, app utilize browser location API to display weather information for the user's current location.
+                </div>
             
-                <img src="./images/loging.PNG" alt="loging"/>
-                <p id="description">
-                    <b>Made with:</b>
-                    <br>
-                    node expressjs, mongodb, express-handlebars</br>
-                </p>
-                <a href="https://user-loging-system.herokuapp.com/" target="_blank">Live Demo </a>
-                <a href="https://github.com/pmadhav82/Login-system" target="_blank" >Github  <i class="fa fa-github"></i></a> 
-                
+                   
+                <div class="card-footer">
+                    <button class="btn">
+                        <a href="weather.html">Live Demo </a>
+
+                    </button>
+                    <button class="btn btn-outline">
+<a href="https://github.com/pmadhav82/Weather-app" target="_blank" >Github  <i class="fa fa-github"></i></a> 
+                    </button>
                 </div>
 
-
-
-                <div class="item">
-                    <h2>MERN Book Store</h2>
-                
-                    <img src="./images/MERN shop.PNG" alt="mern shop"/>
-                    <p id="description">
-                     <b>
-                        Fully Responsive MERN app
-                     </b> 
-                       <br>
-                       User can Add, Delete or Update Book details
-                    </p>
-                    <a href="https://stupendous-panda-41edc1.netlify.app/" target="_blank">Live Demo </a>
-                    <a href="https://github.com/pmadhav82/mernfrontend" target="_blank" >Github  <i class="fa fa-github"></i></a> 
-                
-                    </div>
-
-
-             <div class="item">
-                <h2>Weather App</h2>
-                <img src="./images/weather.PNG" alt="weather"/>
-                <p id="description">
-                   <b>Made with:</b> 
-                   <br>
-                     html,css and JS.</br>
-            Can search for different location weather.
-
-                </p>
-                
-
-                    <a href="weather.html">Live Demo </a>
-                    <a href="https://github.com/pmadhav82/Weather-app" target="_blank" >Github  <i class="fa fa-github"></i></a> 
                 
             </div> 
-        </div>
+
+
+        
         
     </div>
 </div>
@@ -215,7 +198,7 @@
 
   
 <div id="blog">
-    <h1 class="heading">Blog</h1>
+    <h1 class="heading">Blogs</h1>
     <hr/>
     <div class="contain">
 
