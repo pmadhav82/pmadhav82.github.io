@@ -59,16 +59,21 @@ margin-left:auto;
     grid-template-columns: repeat(4,auto);
     list-style: none;
     text-align: center;
-    width: 70%;
-    justify-content: space-around;
+    width: 100%;
+gap: .5rem;
+justify-content: flex-end;
+    align-items: center;
 }
 .nav-links{
     text-decoration: none;
     color: whitesmoke;
-    background:none;
+
+    border-radius: .7rem;
+    padding: .3em .5em;
+    background:#657a97;
 }
 .nav-links:hover{
-    color: red;
+    color: #ff9a0c;
     transition: all 0.2s ease-out;
 }
 
@@ -319,7 +324,7 @@ animation: spin 2s linear infinite;
 
 
 
-@media(max-width:580px){
+@media(max-width:500px){
     .navbar-container{
         position: fixed;
         
@@ -337,7 +342,7 @@ animation: spin 2s linear infinite;
         top: 60px;
      left: -100%;
         opacity: 0; 
-        
+        justify-content: center;
     }
     #logo{
         margin-left: 20px;
@@ -350,13 +355,12 @@ animation: spin 2s linear infinite;
     }
     .nav-links{
         text-align: center;
-        line-height: 60px;
+    background: none;
         width: 100%;
-        display: table;
+    
     } 
     .nav-links:hover{
-        background-color: blueviolet;
-        color: white;
+         color: #ff9a0c;;
         transition: all 0.4s ease-out;
     }
     .navbar{
