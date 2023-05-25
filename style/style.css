@@ -15,8 +15,6 @@ a{
     
 }
 .navbar-container{
-    
-position: fixed;
     z-index:1;
     width: 100%;
     background-color: rgb(54, 54, 54);
@@ -31,6 +29,7 @@ position: fixed;
     width: 90%;
     max-width: 1720px;
     margin: 0 auto;
+    
 }
 #logo{
 
@@ -99,41 +98,21 @@ gap: 10px;
  justify-content: center;
 
 }
+
+
 .imageContainer{
-    margin-top: 30px;
     max-width: 60%;
     width: 16rem;
     height: auto;
 }
 .imageContainer img{
+
     width: 100%;
     height: 100%;
-border-radius: 2rem;
 }
-.intro{
-    padding: 10px;
-    border: 3px solid beige;
-    align-self: center;
-    width: 450px;
-    margin-left: 30px;
-    text-align: left;
-   
-}
-.intro a{
-    display: inline-block;
-   
-font-weight: 400;
-    
-    margin-top: 10px;
-    margin-left: 20px;
-    
-    transition: all 0.3s ease;
-    text-decoration: none;
-}
-.intro a:hover{
-    color: crimson;
-    background: none;
-}
+
+
+
 .icons{
     padding: 5px;
     border-top: 2px solid beige;
@@ -193,31 +172,7 @@ font-weight: 400;
     width: 100%;
     height: 40%;
 }
-.download-btn{
-    background-color: rgb(68, 0, 255);
-    color: #fff;
-    padding: 5px 10px 0 ;
-    font-size: 1.3rem;
-    border-radius: 10px;
-   
-} 
-#service .content .item a{
-    
-    text-decoration: none;
-    background: rgb(117, 6, 28);
-    color: #fff;
-    font-size: 20px;
-    font-weight: 500;
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 10px;
-    border: 2px solid crimson;
-    transition: all 0.3s ease;
-}
- #service .content .item a:hover{
-    color: rgb(231, 183, 193);
-    background: rgb(45, 5, 83);
-}
+
 
 
 
@@ -250,7 +205,7 @@ font-weight: 400;
     padding: 0.5rem 1rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1rem;
-    align-items: flex-start;
+    align-items: center;
     
    
 }
@@ -431,8 +386,12 @@ animation: spin 2s linear infinite;
        flex-wrap: wrap;
     
    }
+   .imageContainer{
+    margin-top: 60px;
+   
+   }
    .imageContainer img{
-       height: 100%;
+    border-radius: 1rem;
    }
   
         #service .content{
