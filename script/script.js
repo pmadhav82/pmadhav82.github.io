@@ -14,7 +14,7 @@ menuLink.classList="nav-menu";
 })
 
 
-const URL_STRING ="http://13.54.206.174/api/pmadhav279@gmail.com"
+const URL_STRING ="http://www.pblog.online/api/pmadhav279@gmail.com"
 const getData = async ()=>{
   let postCard = document.querySelector(".postCard");
   let html = "";
