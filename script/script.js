@@ -14,7 +14,7 @@ menuLink.classList="nav-menu";
 })
 
 
-const URL_STRING ="http://www.pblog.online/api/pmadhav279@gmail.com"
+const URL_STRING ="https://www.pblog.online/api/pmadhav279@gmail.com"
 const getData = async ()=>{
   let postCard = document.querySelector(".postCard");
   let html = "";
@@ -48,7 +48,7 @@ if(res.status>299){
  
  </div>
 <div class = "card-footer">
- <form method="get"  target = "_none" action="http://www.pblog.online/${d._id}">
+ <form method="get"  target = "_none" action="https://www.pblog.online/${d._id}">
 <button class="btn" type="submit">Read More</button>
 </form>
 </div>
