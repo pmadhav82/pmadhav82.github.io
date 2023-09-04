@@ -31,14 +31,18 @@ if(res.status>299){
   return
 }else{
   let data = await res.json();
+  console.log(data);
   data.forEach((d)=>{
     html += `
     <div class="card card-shadow">
 
 <div class = "card-header">
+<div class = "user-info">
+<img class = "userPic" src = https://www.pblog.online${d.profileURL}
    <b> ${d.creator} </b>
-   <br>
-    ${d.createdAt}
+   </div>
+ 
+    <hr/>
   </div>
 
 <div class="card-body">

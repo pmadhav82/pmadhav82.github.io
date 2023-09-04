@@ -231,6 +231,14 @@ animation: spin 2s linear infinite;
     100% {transform: rotate(360deg);}
 }
 
+.user-info{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .5rem;
+    margin-bottom: .5rem;
+}
+
 .card{
     margin-top: 1rem;
     --padding: 1rem;
@@ -238,7 +246,7 @@ animation: spin 2s linear infinite;
   background: #ffff;
   border-radius: 1rem;
   overflow: hidden;
-  
+  max-width: 600px;
   }
   .card .btn a{
     text-decoration: none;
@@ -259,6 +267,7 @@ animation: spin 2s linear infinite;
     font-weight: 500;
     margin-bottom: .5rem;
   padding-bottom: 0;
+  
   }
   .card-image{
     overflow: hidden;
@@ -292,6 +301,12 @@ animation: spin 2s linear infinite;
     padding: var(--padding);
     padding-top: 0;
 
+  }
+
+  .userPic{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
   }
   
   .btn{
