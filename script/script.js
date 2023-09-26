@@ -31,7 +31,6 @@ if(res.status>299){
   return
 }else{
   let data = await res.json();
-  console.log(data);
   data.forEach((d)=>{
     html += `
     <div class="card card-shadow">
@@ -77,3 +76,40 @@ postCard.innerHTML = html;
 
 
 getData()
+
+
+const arrowContainer = document.querySelector(".arrowContainer");
+
+
+const calculateScrollValue = () =>{
+  
+  const scrollHeight = document.documentElement.scrollHeight
+  const clietHeight = document.documentElement.clientHeight
+  const scrollTop = document.documentElement.scrollTop
+
+
+let totalHeight = scrollHeight - clietHeight;
+let scrollPositionPercentage = Math.round(scrollTop*100/totalHeight)
+
+//show scrollToTop Button
+if(scrollPositionPercentage>20){
+arrowContainer.style.display = "flex"
+arrowContainer.style.background = `conic-gradient(#1134A6 ${scrollPositionPercentage}%, #FFDEAD 30%)`
+
+arrowContainer.addEventListener("click", ()=>{
+  document.documentElement.scrollTo({
+    top:0,
+    behavior:"smooth"
+  })
+})
+
+}else{
+  arrowContainer.style.display = "none"
+}
+
+
+}
+
+
+window.onload = calculateScrollValue;
+window.onscroll = calculateScrollValue;
