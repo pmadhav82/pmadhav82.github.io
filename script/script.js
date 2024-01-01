@@ -37,8 +37,8 @@ if(res.status>299){
 
 <div class = "card-header">
 <div class = "user-info">
-<img class = "userPic" src = https://www.pblog.online${d.profileURL}
-   <b> ${d.creator} </b>
+<img class = "userPic" src = https://www.pblog.online${d.uid.profileURL}
+   <b> ${d.uid.name} </b>
    </div>
  
     <hr/>
