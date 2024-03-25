@@ -37,7 +37,7 @@ if(res.status>299){
 
 <div class = "card-header">
 <div class = "user-info">
-<img class = "userPic" src = https://www.pblog.online${d.uid.profileURL}
+<img class = "userPic" src = ${URL_STRING}${d.uid.profileURL}
    <b> ${d.uid.name} </b>
    </div>
  
@@ -51,7 +51,7 @@ if(res.status>299){
  
  </div>
 <div class = "card-footer">
- <form method="get"  target = "_none" action="https://www.pblog.online/${d._id}">
+ <form method="get"  target = "_none" action="${URL_STRING}/${d._id}">
 <button class="btn" type="submit">Read More</button>
 </form>
 </div>
